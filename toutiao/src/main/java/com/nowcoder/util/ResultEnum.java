@@ -13,7 +13,10 @@ public enum ResultEnum {
     RECORD_EXISTS(402,"record exists"),
     PARAM_EMPTY(403,"param is empty"),
     LOGIN_REQUIRED(404,"you need to log in first"),
-    PASS_ERROR(405,"password is wrong or empty");
+    PASS_ERROR(405,"password is wrong or empty"),
+    UPLOAD_FAILED(406,"file upload failed"),
+    FILE_READ_FAILED(407,"file read failed");
+
 
     private Integer status;
     private String msg;

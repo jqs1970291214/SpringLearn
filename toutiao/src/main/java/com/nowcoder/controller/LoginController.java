@@ -18,7 +18,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * summary
+ * 登录注册相关
  * descripttions
  *
  * @author Junqson

@@ -17,23 +17,22 @@ public class ApiResult {
     public ApiResult() {
         this.status = 0;
         this.msg = null;
-        this.data = new HashMap<String,Object>();
     }
 
     public ApiResult(int status) {
         this.status = status;
         this.msg = null;
-        this.data = new HashMap<String,Object>();
-
     }
 
     public ApiResult(int status, String msg) {
         this.status = status;
         this.msg = msg;
-        this.data = new HashMap<String,Object>();
     }
 
     public void put(String key, Object object) {
+        if (data == null) {
+            this.data = new HashMap<String,Object>();
+        }
         data.put(key, object);
     }
 
