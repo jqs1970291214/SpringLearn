@@ -1,0 +1,41 @@
+package com.nowcoder.util;
+
+/**
+ * author:Junqson
+ * create:2018/4/15 0:23
+ * des: 枚举状态码与原因
+ */
+public enum ResultEnum {
+
+    SUCCESS(200,"success"),
+    ERROR(400,"error"),
+    NOT_FOUND(401,"not found"),
+    RECORD_EXISTS(402,"record exists"),
+    PARAM_EMPTY(403,"param is empty"),
+    LOGIN_REQUIRED(404,"you need to log in first"),
+    PASS_ERROR(405,"password is wrong or empty");
+
+    private Integer status;
+    private String msg;
+
+    ResultEnum(Integer status, String msg) {
+        this.status = status;
+        this.msg = msg;
+    }
+
+    public Integer getStatus() {
+        return status;
+    }
+
+    public void setStatus(Integer status) {
+        this.status = status;
+    }
+
+    public String getMsg() {
+        return msg;
+    }
+
+    public void setMsg(String msg) {
+        this.msg = msg;
+    }
+}
