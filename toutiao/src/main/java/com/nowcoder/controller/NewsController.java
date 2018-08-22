@@ -46,7 +46,7 @@ public class NewsController {
     private UserHolder holder;
 
     @LoginRequired
-    @RequestMapping("/addNews")
+    @RequestMapping("/user/addNews")
     @ResponseBody
     public ApiResult addNews(@RequestParam("title") String title,
                              @RequestParam("link") String link,
