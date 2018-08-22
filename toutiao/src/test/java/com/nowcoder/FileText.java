@@ -1,6 +1,7 @@
 package com.nowcoder;
 
 import java.io.File;
+import java.io.InputStreamReader;
 
 /**
  * summary
@@ -24,5 +25,7 @@ public class FileText {
 
         System.out.println(file.getAbsolutePath());
         System.out.println(file.getPath());
+
+        InputStreamReader
     }
 }
