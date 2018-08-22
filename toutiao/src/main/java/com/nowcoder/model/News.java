@@ -21,8 +21,6 @@ public class News {
 
     }
 
-
-
     public News(int id, String title, String link, String image, int likeCount, int commentCount, Date createDate, int userId) {
         this.id = id;
         this.title = title;

@@ -21,8 +21,17 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Slf4j
 public class ExceptionHandle {
 
+
     /**
-     * 处理系统异常
+     * 其他的异常处理方式
+     * 1、error.html异常视图
+     * 2、/error路由对应的默认异常处理器
+     * 3、覆盖默认的/error控制器继承AbstractErrorController,BasicErrorController提供默认实现
+     * 4、各个控制层业务层自行trycatch处理
+     */
+
+    /**
+     * 处理系统异常，作为各个控制器的辅助。
      * @param e
      * @return
      */
@@ -37,6 +46,7 @@ public class ExceptionHandle {
             e.printStackTrace(); //输出到控制台或者记录日志，否则会丢失异常信息
             log.error("系统异常:[{}]",e.getMessage());
         }
+
         return apiResult;
     }
 }

@@ -1,6 +1,7 @@
 package com.nowcoder.service;
 
-import com.google.gson.Gson;
+import com.fasterxml.jackson.databind.JsonNode;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nowcoder.util.AppUtils;
 import com.qiniu.common.QiniuException;
 import com.qiniu.common.Zone;
@@ -10,6 +11,8 @@ import com.qiniu.storage.UploadManager;
 import com.qiniu.storage.model.DefaultPutRet;
 import com.qiniu.util.Auth;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.json.JsonParser;
+import org.springframework.boot.json.JsonParserFactory;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -40,6 +43,7 @@ public class QiniuService {
     private String bucket = "filesave";
 
 
+    private ObjectMapper mapper = new ObjectMapper();
 
 
     public String qiniuUpload(MultipartFile file) throws IOException {
@@ -62,12 +66,21 @@ public class QiniuService {
         byte[] uploadBytes = file.getBytes();
         Auth auth = Auth.create(accessKey, secretKey);
         String upToken = auth.uploadToken(bucket);
+        Response response = null;
         try {
-            Response response = uploadManager.put(uploadBytes, key, upToken);
-            //解析上传成功的结果
-            DefaultPutRet putRet = new Gson().fromJson(response.bodyString(), DefaultPutRet.class);
+            response = uploadManager.put(uploadBytes, key, upToken);
+            //System.out.println(response.bodyString());
+            if (response.isOK() && response.isJson()) {
+                JsonNode node = mapper.readTree(response.bodyString());
+                String add = node.get("key").asText();
+                return add;
+            } else {
+                log.error("七牛异常: " + response.bodyString());
+
+            }
         } catch (QiniuException ex) {
             log.error("七牛异常: " + ex.getMessage());
+            return null;
         }
 
         return null;

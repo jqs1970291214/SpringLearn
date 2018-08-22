@@ -9,6 +9,11 @@ package com.nowcoder.util;
  */
 public class AppUtils {
 
+
+    //七牛bucket测试域名
+    public static String QINIU_DOMAIN = "http://pdngs0qa5.bkt.clouddn.com/";
+
+
     //本应用域名
     public static String DOMAIN = "http://127.0.0.1:8080/";
 
