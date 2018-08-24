@@ -21,7 +21,10 @@ public class Comment {
     private String content;
     private int userId;
     private int entityId; //评论的实体id
-    private String entityType; //评论的实体类型
+    private int entityType; //评论的实体类型
     private Date createdDate;
     private int status; //0 valid 1 invalid
+
+
+
 }

@@ -2,16 +2,12 @@ package com.nowcoder.controller;
 
 import com.nowcoder.annotation.LoginRequired;
 import com.nowcoder.exception.MyException;
-import com.nowcoder.model.News;
-import com.nowcoder.model.User;
-import com.nowcoder.model.UserHolder;
+import com.nowcoder.model.*;
+import com.nowcoder.service.CommentService;
 import com.nowcoder.service.NewsService;
 import com.nowcoder.service.QiniuService;
 import com.nowcoder.service.UserService;
-import com.nowcoder.util.ApiResult;
-import com.nowcoder.util.AppUtils;
-import com.nowcoder.util.ResultEnum;
-import com.nowcoder.util.ResultUtil;
+import com.nowcoder.util.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.ApplicationPid;
@@ -23,7 +19,9 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletResponse;
 import java.io.FileInputStream;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 /**
  * 消息相关
@@ -46,6 +44,9 @@ public class NewsController {
     private QiniuService qiniuService;
 
     @Autowired
+    private CommentService commentService;
+
+    @Autowired
     private UserHolder holder;
 
 
@@ -53,7 +54,16 @@ public class NewsController {
     public String newsDetail(@PathVariable("newsId") int newsId, Model model) {
         News news = newsService.getNews(newsId);
         if (news != null) {
-            //获取评论等操作
+            //获取评论
+            List<Comment> commentList = commentService.getCommentsByEntity(newsId, EntityType.ENTITY_NEWS);
+            List<ViewObject> viewObjects = new ArrayList<>();
+            for (Comment comment : commentList) {
+                ViewObject viewObject = new ViewObject();
+                viewObject.set("comment", comment);
+                viewObject.set("user", comment.getUserId());
+                viewObjects.add(viewObject);
+            }
+            model.addAttribute("comments", viewObjects);
         }
         model.addAttribute("news", news);
         User user = userService.getUser(news.getUserId());
