@@ -7,6 +7,7 @@ import com.nowcoder.model.User;
 import com.nowcoder.model.UserHolder;
 import com.nowcoder.service.NewsService;
 import com.nowcoder.service.QiniuService;
+import com.nowcoder.service.UserService;
 import com.nowcoder.util.ApiResult;
 import com.nowcoder.util.AppUtils;
 import com.nowcoder.util.ResultEnum;
@@ -39,6 +40,9 @@ public class NewsController {
     private NewsService newsService;
 
     @Autowired
+    private UserService userService;
+
+    @Autowired
     private QiniuService qiniuService;
 
     @Autowired
@@ -52,6 +56,8 @@ public class NewsController {
             //获取评论等操作
         }
         model.addAttribute("news", news);
+        User user = userService.getUser(news.getUserId());
+        model.addAttribute("owner", user);
         return "detail";
     }
 
