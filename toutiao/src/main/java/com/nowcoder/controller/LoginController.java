@@ -33,6 +33,13 @@ public class LoginController {
     @Autowired
     private UserHolder holder;
 
+    @RequestMapping("/loginPage")
+    public String loginPage() {
+        return "loginPage";
+    }
+
+
+
     @RequestMapping(value = "/reg", method = {RequestMethod.GET, RequestMethod.POST})
     @ResponseBody
     public ApiResult reg(@RequestParam("username") String username,

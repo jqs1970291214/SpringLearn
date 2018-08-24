@@ -26,7 +26,7 @@
                 <span class="icon-bar"></span>
             </button>
 
-            <a href="http://nowcoder.com/" class="navbar-brand logo">
+            <a href="/" class="navbar-brand logo">
                 <h1>头条资讯</h1>
                 <h3>你关心的才是头条</h3>
             </a>
@@ -40,8 +40,9 @@
                 <li><a href="http://nowcoder.com/signin">站内信</a></li>
                 #if ($user)
                 <li class=""><a href="http://nowcoder.com/about">${user.name}</a></li>
+                <li class=""><a href="/logout">注销</a></li>
                 #else
-                <li class=""><a href="http://nowcoder.com/about">登陆</a></li>
+                <li class=""><a href="/loginPage">登陆</a></li>
                 #end
             </ul>
 

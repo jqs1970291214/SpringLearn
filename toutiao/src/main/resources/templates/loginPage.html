@@ -1,0 +1,20 @@
+#parse("header.html")
+<div class="main">
+    login page
+
+    <style>
+        .logform-container {
+            width: 400px;
+            margin: 20px auto;
+        }
+
+    </style>
+    <div class="logform-container">
+        <form action="http://localhost:8080/login">
+            <input type="text" name="username">
+            <input type="password" name="password">
+            <input type="submit" value="login">
+        </form>
+    </div>
+</div>
+#parse("footer.html")

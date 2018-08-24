@@ -48,6 +48,9 @@ public class NewsController {
     @RequestMapping("/news/{newsId}")
     public String newsDetail(@PathVariable("newsId") int newsId, Model model) {
         News news = newsService.getNews(newsId);
+        if (news != null) {
+            //获取评论等操作
+        }
         model.addAttribute("news", news);
         return "detail";
     }
