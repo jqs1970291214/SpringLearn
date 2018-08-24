@@ -24,16 +24,20 @@ public class NewsService {
     @Autowired
     private NewsDao newsDao;
 
+
     public List<News> getLatestNews(int userId, int offset, int limit) {
         return newsDao.selectByUserIdAndOffset(userId, offset, limit);
+    }
+
+    public News getNews(int newsId) {
+        return newsDao.getNews(newsId);
     }
 
     public void addNews(News news) {
         newsDao.addNews(news);
     }
 
-
-
+    //上传图片
     public String saveImage(MultipartFile file) throws IOException {
 
         String filename = file.getOriginalFilename();

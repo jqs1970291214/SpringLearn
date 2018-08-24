@@ -3,6 +3,7 @@ package com.nowcoder.controller;
 import com.nowcoder.annotation.LoginRequired;
 import com.nowcoder.exception.MyException;
 import com.nowcoder.model.News;
+import com.nowcoder.model.User;
 import com.nowcoder.model.UserHolder;
 import com.nowcoder.service.NewsService;
 import com.nowcoder.service.QiniuService;
@@ -45,7 +46,8 @@ public class NewsController {
     @Autowired
     private UserHolder holder;
 
-    @LoginRequired
+
+
     @RequestMapping("/user/addNews")
     @ResponseBody
     public ApiResult addNews(@RequestParam("title") String title,
@@ -58,7 +60,13 @@ public class NewsController {
         news.setLikeCount(0);
         news.setLink(link);
         news.setTitle(title);
-        news.setUserId(holder.getUser().getId());
+        User user = null;
+        //匿名用户
+        if ((user = holder.getUser()) == null) {
+            news.setUserId(0);
+        } else {
+            news.setUserId(user.getId());
+        }
         try {
             newsService.addNews(news);
         } catch (Exception e) { //处理特定异常
