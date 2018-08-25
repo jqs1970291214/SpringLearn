@@ -53,7 +53,7 @@ CREATE TABLE `message` (
   `to_id` INT NULL,
   `content` TEXT NULL,
   `created_date` DATETIME NULL,
-  `has_read` INT NULL,
+  `has_read` INT NULL, # 0未读 1已读
   `conversation_id` VARCHAR(45) NOT NULL,
   PRIMARY KEY (`id`),
   INDEX `conversation_index` (`conversation_id` ASC),

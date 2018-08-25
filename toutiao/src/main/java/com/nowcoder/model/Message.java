@@ -23,6 +23,8 @@ public class Message {
     private int toId;
     private String content;
     private Date createdDate;
+    //0未读 1已读
     private int hasRead;
+    //生成conversationId 小的id放在前面实现对话共享 1_2 2_1 这样是一个会话 1_2
     private String conversationId;
 }

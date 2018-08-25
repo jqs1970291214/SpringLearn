@@ -56,6 +56,7 @@ public class NewsController {
             Comment comment = new Comment();
             comment.setEntityType(EntityType.ENTITY_NEWS);
             comment.setCreatedDate(new Date());
+            //过滤掉其中的敏感词
             comment.setContent(content);
             comment.setEntityId(newsId);
             User user = holder.getUser();
