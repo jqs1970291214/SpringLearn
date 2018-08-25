@@ -21,7 +21,7 @@ public class Message {
     private int fromId;
     private int toId;
     private String content;
-
-
-
+    private Data createdDate;
+    private int hasRead;
+    private String conversationId;
 }
