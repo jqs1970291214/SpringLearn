@@ -37,7 +37,9 @@ public class NewsService {
         newsDao.addNews(news);
     }
 
-
+    public void updateNews(News news) {
+        newsDao.updateNews(news);
+    }
 
     //上传图片
     public String saveImage(MultipartFile file) throws IOException {

@@ -26,6 +26,11 @@ public interface NewsDao {
     @Select("select " + SELECT_FIELDS + " from " + TABLE_NAME + " where id = #{id}")
     News getNews(int id);
 
+    //只修改status，ticket，expired三个字段
+    @Update({"update ", TABLE_NAME, "set title = #{title},link = #{link},image = #{image},like_count = #{likeCount},comment_count = #{commentCount} where id = #{id}"})
+    void updateNews(News news);
+
+
     //使用xml配置
     List<News> selectByUserIdAndOffset(@Param("userId") int userId, @Param("offset") int offset,
                                        @Param("limit") int limit);

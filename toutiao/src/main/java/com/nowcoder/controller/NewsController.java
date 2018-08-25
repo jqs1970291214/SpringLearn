@@ -53,8 +53,7 @@ public class NewsController {
 
     //添加评论
     @RequestMapping("/addComment")
-    @ResponseBody
-    public ApiResult addComment(@RequestParam("newsId") int newsId,
+    public String addComment(@RequestParam("newsId") int newsId,
                                 @RequestParam("content") String content) {
         try {
             Comment comment = new Comment();
@@ -69,12 +68,16 @@ public class NewsController {
                 comment.setUserId(holder.getUser().getId());
             }
             commentService.addComment(comment);
+            //更新news里面的评论数量
+            News news = newsService.getNews(newsId);
+            news.setCommentCount(news.getCommentCount() + 1);
+            newsService.updateNews(news);
         } catch (Exception e) {
             log.error("添加评论失败:[{}]", e.getMessage());
-            return ResultUtil.error("添加评论失败");
+            return "error";
         }
 
-        return ResultUtil.success();
+        return "redirect:/news/" + newsId;
     }
 
     //查看news
