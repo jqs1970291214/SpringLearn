@@ -1,7 +1,5 @@
 package com.nowcoder.controller;
 
-import com.fasterxml.jackson.annotation.JsonRootName;
-import com.nowcoder.annotation.LoginRequired;
 import com.nowcoder.exception.MyException;
 import com.nowcoder.model.*;
 import com.nowcoder.service.CommentService;
@@ -11,7 +9,6 @@ import com.nowcoder.service.UserService;
 import com.nowcoder.util.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.boot.ApplicationPid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.StreamUtils;

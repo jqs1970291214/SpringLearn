@@ -5,10 +5,7 @@ import com.nowcoder.interceptor.LoginRequiredIntercepter;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.autoconfigure.web.WebMvcAutoConfiguration;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.web.servlet.config.annotation.InterceptorRegistry;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
-import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
+import org.springframework.web.servlet.config.annotation.*;
 
 /**
  * summary
@@ -32,6 +29,14 @@ public class WebConfig extends WebMvcConfigurerAdapter {
 
         //registry.addInterceptor(loginRequiredIntercepter).addPathPatterns("/username");
         super.addInterceptors(registry);
+    }
 
+    //增加跨域
+    @Override
+    public void addCorsMappings(CorsRegistry registry) {
+        registry.addMapping("/**")
+                .allowedOrigins("*")
+                .allowedMethods("POST", "GET");
+        super.addCorsMappings(registry);
     }
 }

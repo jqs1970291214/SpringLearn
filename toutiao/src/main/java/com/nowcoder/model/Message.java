@@ -4,6 +4,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
+import java.util.Date;
 import java.util.TreeSet;
 
 /**
@@ -21,7 +22,7 @@ public class Message {
     private int fromId;
     private int toId;
     private String content;
-    private Data createdDate;
+    private Date createdDate;
     private int hasRead;
     private String conversationId;
 }
