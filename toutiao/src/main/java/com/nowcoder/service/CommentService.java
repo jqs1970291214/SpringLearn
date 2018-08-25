@@ -30,4 +30,6 @@ public class CommentService {
     public List<Comment> getCommentsByEntity(int entityId, int entityType) {
         return commentDao.selectByEntity(entityId, entityType);
     }
+
+
 }

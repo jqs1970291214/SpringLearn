@@ -1,5 +1,6 @@
 package com.nowcoder.controller;
 
+import com.fasterxml.jackson.annotation.JsonRootName;
 import com.nowcoder.annotation.LoginRequired;
 import com.nowcoder.exception.MyException;
 import com.nowcoder.model.*;
@@ -50,6 +51,33 @@ public class NewsController {
     private UserHolder holder;
 
 
+    //添加评论
+    @RequestMapping("/addComment")
+    @ResponseBody
+    public ApiResult addComment(@RequestParam("newsId") int newsId,
+                                @RequestParam("content") String content) {
+        try {
+            Comment comment = new Comment();
+            comment.setEntityType(EntityType.ENTITY_NEWS);
+            comment.setCreatedDate(new Date());
+            comment.setContent(content);
+            comment.setEntityId(newsId);
+            User user = holder.getUser();
+            if (user == null) {
+                comment.setUserId(0);
+            } else {
+                comment.setUserId(holder.getUser().getId());
+            }
+            commentService.addComment(comment);
+        } catch (Exception e) {
+            log.error("添加评论失败:[{}]", e.getMessage());
+            return ResultUtil.error("添加评论失败");
+        }
+
+        return ResultUtil.success();
+    }
+
+    //查看news
     @RequestMapping("/news/{newsId}")
     public String newsDetail(@PathVariable("newsId") int newsId, Model model) {
         News news = newsService.getNews(newsId);
@@ -60,7 +88,8 @@ public class NewsController {
             for (Comment comment : commentList) {
                 ViewObject viewObject = new ViewObject();
                 viewObject.set("comment", comment);
-                viewObject.set("user", comment.getUserId());
+                User user = userService.getUser(comment.getUserId());
+                viewObject.set("user", user);
                 viewObjects.add(viewObject);
             }
             model.addAttribute("comments", viewObjects);
@@ -71,7 +100,7 @@ public class NewsController {
         return "detail";
     }
 
-
+    //增加news
     @RequestMapping("/user/addNews")
     @ResponseBody
     public ApiResult addNews(@RequestParam("title") String title,

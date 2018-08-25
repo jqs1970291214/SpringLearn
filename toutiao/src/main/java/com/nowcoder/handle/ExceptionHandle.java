@@ -43,7 +43,7 @@ public class ExceptionHandle {
             apiResult.setStatus(((MyException) e).getStatus());
             apiResult.setMsg(e.getMessage());
         } else {
-            e.printStackTrace(); //输出到控制台或者记录日志，否则会丢失异常信息
+            //e.printStackTrace(); //输出到控制台或者记录日志，否则会丢失异常信息
             log.error("系统异常:[{}]",e.getMessage());
         }
 

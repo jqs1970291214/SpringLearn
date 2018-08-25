@@ -37,6 +37,8 @@ public class NewsService {
         newsDao.addNews(news);
     }
 
+
+
     //上传图片
     public String saveImage(MultipartFile file) throws IOException {
 
@@ -59,5 +61,7 @@ public class NewsService {
 
         return AppUtils.DOMAIN + "img?name=" + name;
     }
+
+
 
 }
