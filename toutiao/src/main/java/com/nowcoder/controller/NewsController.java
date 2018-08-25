@@ -68,7 +68,10 @@ public class NewsController {
                 comment.setUserId(holder.getUser().getId());
             }
             commentService.addComment(comment);
-            //更新news里面的评论数量
+
+            //更新评论数量 高并发场景下可能出问题，可以异步化处理，放到消息队列
+            //int count = commentService.getCommentCount(comment.getEntityId(),comment.getEntityType);
+            //newsService.updateCommentCount(comment.getEntityId(),count);
             News news = newsService.getNews(newsId);
             news.setCommentCount(news.getCommentCount() + 1);
             newsService.updateNews(news);
