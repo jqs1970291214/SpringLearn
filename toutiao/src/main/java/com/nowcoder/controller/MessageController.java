@@ -85,6 +85,8 @@ public class MessageController {
                 int targetId = localUserId == message.getFromId() ? message.getToId() : localUserId;
                 User user = userService.getUser(targetId);
                 viewObject.set("target", user);
+                int unread = messageService.getConversationUnreadCount(localUserId, message.getConversationId());
+                viewObject.set("unreadCount", unread);
                 viewObjects.add(viewObject);
 
             }

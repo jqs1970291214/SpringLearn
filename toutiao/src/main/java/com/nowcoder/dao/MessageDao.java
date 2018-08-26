@@ -56,4 +56,8 @@ public interface MessageDao {
                                         @Param("offset") int offset,
                                         @Param("limit") int limit);
 
+    //查询会话未读消息数，userId用于确定该消息是发给该用户的
+    @Select({"select count(id) from ", TABLE_NAME, " where has_read=0 and to_id=#{userId} and conversation_id=#{conversationId}"})
+    int getConversationUnreadCount(@Param("userId") int userId, @Param("conversationId") String conversationId);
+
 }

@@ -31,4 +31,9 @@ public class MessageService {
     public List<Message> getConversationList(int userId, int offset, int limit) {
         return messageDao.getConversationList(userId, offset, limit);
     }
+
+    //获取对话未读消息数量
+    public int getConversationUnreadCount(int userId, String conversationId) {
+        return messageDao.getConversationUnreadCount(userId, conversationId);
+    }
 }
