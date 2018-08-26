@@ -76,18 +76,19 @@ public class MessageController {
         try {
             int localUserId = userHolder.getUser().getId();
             List<Message> conversationList = messageService.getConversationList(localUserId, 0, 10);
+            //System.out.println(conversationList.toString());
             List<ViewObject> viewObjects = new ArrayList<>();
             for (Message message : conversationList) {
                 ViewObject viewObject = new ViewObject();
                 viewObject.set("conversation", message);
-                //获取对方的
+                //获取对方
                 int targetId = localUserId == message.getFromId() ? message.getToId() : localUserId;
                 User user = userService.getUser(targetId);
                 viewObject.set("target", user);
                 viewObjects.add(viewObject);
 
             }
-            model.addAttribute("messages", viewObjects);
+            model.addAttribute("conversations", viewObjects);
         } catch (Exception e) {
             log.error("获取消息列表失败:[{}]", e.getMessage());
         }
