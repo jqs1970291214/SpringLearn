@@ -26,11 +26,13 @@ public class FileText {
 //        System.out.println(file.getAbsolutePath());
 //        System.out.println(file.getPath());
 
-        byte[] bytes = "name:yujiechao\nage=1 title=2\ntitledhhh\nsex=male".getBytes();
-        ByteArrayInputStream inputStream = new ByteArrayInputStream(bytes);
-        Properties properties = new Properties();
-        properties.load(inputStream);
-        properties.list(System.out);
+//        byte[] bytes = "name:yujiechao\nage=1 title=2\ntitledhhh\nsex=male".getBytes();
+//        ByteArrayInputStream inputStream = new ByteArrayInputStream(bytes);
+//        Properties properties = new Properties();
+//        properties.load(inputStream);
+//        properties.list(System.out);
+
+
 
     }
 }

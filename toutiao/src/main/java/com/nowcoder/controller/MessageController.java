@@ -66,11 +66,6 @@ public class MessageController {
         return ResultUtil.success();
     }
 
-    @LoginRequired
-    @RequestMapping("/msg/detaill")
-    public String conversationDetaill() {
-        return "";
-    }
 
 
     @LoginRequired

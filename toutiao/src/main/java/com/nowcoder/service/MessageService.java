@@ -23,8 +23,12 @@ public class MessageService {
     public int addMessage(Message message) {
         return messageDao.addMessage(message);
     }
-
+    //获取对话详情
     public List<Message> getConversationDeatil(String conversationId,int offset,int limit) {
         return messageDao.getConversationDetail(conversationId, offset, limit);
+    }
+    //获取对话列表
+    public List<Message> getConversationList(int userId, int offset, int limit) {
+        return messageDao.getConversationList(userId, offset, limit);
     }
 }

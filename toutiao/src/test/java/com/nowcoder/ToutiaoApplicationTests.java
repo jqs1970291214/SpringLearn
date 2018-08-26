@@ -34,9 +34,11 @@ public class ToutiaoApplicationTests {
 	@Test
 	@Transactional //会自动回滚
 	public void contextLoads() {
-		List<Message> messages = messageDao.getConversationDetail("1_12", 0, 10);
-		System.out.println(messages.toString());
+//		List<Message> messages = messageDao.getConversationDetail("1_12", 0, 10);
+//		System.out.println(messages.toString());
 
+		List<Message> messages = messageDao.getConversationList("12", 0, 10);
+		System.out.println(messages.toString());
 	}
 
 }
