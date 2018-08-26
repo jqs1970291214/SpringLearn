@@ -82,7 +82,7 @@ public class MessageController {
                 ViewObject viewObject = new ViewObject();
                 viewObject.set("conversation", message);
                 //获取对方
-                int targetId = localUserId == message.getFromId() ? message.getToId() : localUserId;
+                int targetId = localUserId == message.getFromId() ? message.getToId() : message.getFromId();
                 User user = userService.getUser(targetId);
                 viewObject.set("target", user);
                 int unread = messageService.getConversationUnreadCount(localUserId, message.getConversationId());
