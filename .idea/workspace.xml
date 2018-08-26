@@ -96,7 +96,7 @@
         <counts>
           <entry key="cell" value="131" />
           <entry key="html" value="378" />
-          <entry key="java" value="11125" />
+          <entry key="java" value="11286" />
           <entry key="sql" value="561" />
           <entry key="txt" value="13" />
           <entry key="xml" value="32" />
@@ -105,7 +105,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="378" />
-          <entry key="JAVA" value="11125" />
+          <entry key="JAVA" value="11286" />
           <entry key="PLAIN_TEXT" value="13" />
           <entry key="SQL" value="12" />
           <entry key="Scratch" value="680" />
@@ -116,11 +116,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/dao/MessageDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="469">
-              <caret line="55" column="32" lean-forward="true" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+            <state relative-caret-position="763">
+              <caret line="52" column="39" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -128,20 +128,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/toutiao/src/test/java/com/nowcoder/ToutiaoApplicationTests.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="336">
-              <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/service/MessageService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="500">
-              <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
+            <state relative-caret-position="427">
+              <caret line="31" column="52" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#430#431#0" expanded="true" />
@@ -252,7 +243,6 @@
         <option value="$PROJECT_DIR$/toutiao/src/test/resources/init-schema.sql" />
         <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/model/Message.java" />
         <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/dao/CommentDao.java" />
-        <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/service/MessageService.java" />
         <option value="$PROJECT_DIR$/toutiao/src/main/resources/templates/letterDetail.html" />
         <option value="$PROJECT_DIR$/toutiao/pom.xml" />
         <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/controller/MessageController.java" />
@@ -260,6 +250,7 @@
         <option value="$PROJECT_DIR$/toutiao/src/test/java/com/nowcoder/FileText.java" />
         <option value="$PROJECT_DIR$/toutiao/src/test/java/com/nowcoder/ToutiaoApplicationTests.java" />
         <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/dao/MessageDao.java" />
+        <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/service/MessageService.java" />
       </list>
     </option>
   </component>
@@ -451,7 +442,7 @@
     <property name="SearchEverywhereHistoryKey" value="BufferedReader&#9;PSI&#9;JAVA://java.io.BufferedReader" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535276702391" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535276964353" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/toutiao" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -577,17 +568,11 @@
       <workItem from="1535102745388" duration="12148000" />
       <workItem from="1535198901931" duration="7752000" />
       <workItem from="1535207301883" duration="13000" />
-      <workItem from="1535254031182" duration="11123000" />
+      <workItem from="1535254031182" duration="11384000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ToutiaoApplicationTests_contextLoads - 2018.08.24 at 22h 51m 49s.xml">
-      <configuration name="ToutiaoApplicationTests.contextLoads" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ToutiaoApplicationTests_contextLoads - 2018.08.24 at 22h 53m 58s.xml">
-      <configuration name="ToutiaoApplicationTests.contextLoads" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ToutiaoApplicationTests_contextLoads - 2018.08.24 at 23h 09m 17s.xml">
       <configuration name="ToutiaoApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
@@ -612,15 +597,21 @@
     <history-entry file="ToutiaoApplicationTests - 2018.08.26 at 17h 42m 10s.xml">
       <configuration name="ToutiaoApplicationTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ToutiaoApplicationTests - 2018.08.26 at 17h 45m 13s.xml">
+      <configuration name="ToutiaoApplicationTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ToutiaoApplicationTests - 2018.08.26 at 17h 46m 32s.xml">
+      <configuration name="ToutiaoApplicationTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52808000" />
+    <option name="totallyTimeSpent" value="53069000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988662" visible="true" weight="0.16040772" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988662" visible="true" weight="0.2832618" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -634,10 +625,10 @@
       <window_info anchor="bottom" id="Debug" order="2" weight="0.6689342" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.49946353" visible="true" weight="0.0" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49946353" weight="0.48752835" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.0" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005365" side_tool="true" weight="0.49773243" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3605442" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" />
@@ -1077,18 +1068,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/service/MessageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="23" column="30" selection-start-line="23" selection-start-column="30" selection-end-line="23" selection-end-column="30" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#430#431#0" expanded="true" />
-            <element signature="e#483#484#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/toutiao/src/test/java/com/nowcoder/FileText.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1302">
@@ -1129,10 +1108,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/dao/MessageDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="469">
-          <caret line="55" column="32" lean-forward="true" selection-start-line="55" selection-start-column="32" selection-end-line="55" selection-end-column="32" />
+        <state relative-caret-position="763">
+          <caret line="52" column="39" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/service/MessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="31" column="52" selection-start-line="31" selection-start-column="46" selection-end-line="31" selection-end-column="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#430#431#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
           </folding>
         </state>
       </provider>

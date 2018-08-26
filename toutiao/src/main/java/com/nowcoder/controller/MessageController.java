@@ -66,7 +66,32 @@ public class MessageController {
         return ResultUtil.success();
     }
 
+    @LoginRequired
+    @RequestMapping("/msg/list")
+    public String conversationList(Model model, @RequestParam("userId") String userId) {
+        try {
+            List<Message> messageList = messageService.getConversationList(userId, 0, 10);
+            List<ViewObject> viewObjects = new ArrayList<>();
+            for (Message message : messageList) {
+                ViewObject viewObject = new ViewObject();
+                viewObject.set("message", message);
+                //获取发送者的头像
+                User user = userService.getUser(message.getFromId());
+                if (user == null) {
+                    //忽略本条消息
+                    continue;
+                }
+                viewObject.set("headUrl", user.getHeadUrl());
+                viewObject.set("userId", user.getId());
+                viewObjects.add(viewObject);
 
+            }
+            model.addAttribute("messages", viewObjects);
+        } catch (Exception e) {
+            log.error("获取消息列表失败:[{}]", e.getMessage());
+        }
+        return "letter";
+    }
 
     @LoginRequired
     @RequestMapping("/msg/detail")
