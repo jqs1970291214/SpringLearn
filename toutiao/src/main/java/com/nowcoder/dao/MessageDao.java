@@ -3,6 +3,11 @@ package com.nowcoder.dao;
 import com.nowcoder.model.Message;
 import com.nowcoder.model.Ticket;
 import org.apache.ibatis.annotations.*;
+import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
+import org.springframework.stereotype.Repository;
+
+import javax.annotation.PreDestroy;
+import java.util.List;
 
 /**
  * summary
@@ -11,6 +16,7 @@ import org.apache.ibatis.annotations.*;
  * @author Junqson
  * @date 2018/8/25 21:22
  */
+@Repository
 @Mapper
 public interface MessageDao {
 
@@ -21,8 +27,10 @@ public interface MessageDao {
     @Insert({"insert into ",TABLE_NAME,"(",INSERT_FIELDS,") values(#{fromId},#{toId},#{content},#{createdDate},#{hasRead},#{conversationId})"})
     int addMessage(Message message);
 
-//    @Select({"select ", SELECT_FIELDS, " from ", TABLE_NAME, " where user_id = #{userId} and status = 0"})
-//    Ticket selectBy(int userId);
+    @Select({"select ", SELECT_FIELDS, " from ", TABLE_NAME, " where conversation_id = #{conversationId} order by id desc limit #{offset},#{limit}"})
+    List<Message> getConversationDetail(@Param("conversationId") String conversationId,
+                                        @Param("offset") int offset,
+                                        @Param("limit") int limit);
 //
 //    @Select({"select ", SELECT_FIELDS, " from ", TABLE_NAME, " where ticket = #{ticket}"})
 //    Ticket selectByTicket(String ticket);

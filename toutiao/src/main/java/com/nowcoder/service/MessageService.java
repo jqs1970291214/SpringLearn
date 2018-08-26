@@ -5,6 +5,8 @@ import com.nowcoder.model.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * summary
  * descripttions
@@ -20,5 +22,9 @@ public class MessageService {
 
     public int addMessage(Message message) {
         return messageDao.addMessage(message);
+    }
+
+    public List<Message> getConversationDeatil(String conversationId,int offset,int limit) {
+        return messageDao.getConversationDetail(conversationId, offset, limit);
     }
 }

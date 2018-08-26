@@ -1,8 +1,10 @@
 package com.nowcoder;
 
 import com.nowcoder.dao.CommentDao;
+import com.nowcoder.dao.MessageDao;
 import com.nowcoder.dao.UserDao;
 import com.nowcoder.model.Comment;
+import com.nowcoder.model.Message;
 import com.nowcoder.model.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -24,22 +26,16 @@ public class ToutiaoApplicationTests {
 	@Autowired
 	CommentDao commentDao;
 
+	@Autowired
+	MessageDao messageDao;
+
+
+
 	@Test
 	@Transactional //会自动回滚
 	public void contextLoads() {
-		User user = userDao.selectById(1);
-
-		Comment comment = new Comment();
-		comment.setContent("我是测试");
-		comment.setCreatedDate(new Date());
-		comment.setEntityType(0); //news
-		comment.setEntityId(1);
-		commentDao.addComment(comment);
-		int count = commentDao.getCommentCount(1, 0);
-		System.out.println(count);
-
-		List<Comment> comment1 = commentDao.selectByEntity(1, 0);
-		System.out.println(comment1.toString());
+		List<Message> messages = messageDao.getConversationDetail("1_12", 0, 10);
+		System.out.println(messages.toString());
 
 	}
 
