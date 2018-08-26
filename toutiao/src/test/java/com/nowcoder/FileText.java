@@ -31,7 +31,11 @@ public class FileText {
 //        Properties properties = new Properties();
 //        properties.load(inputStream);
 //        properties.list(System.out);
-
+        try {
+            throw new Exception("dasda");
+        } catch (Exception e) {
+            System.out.println(e.getMessage());
+        }
 
 
     }

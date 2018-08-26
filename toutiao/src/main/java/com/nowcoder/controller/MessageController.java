@@ -3,6 +3,7 @@ package com.nowcoder.controller;
 import com.nowcoder.annotation.LoginRequired;
 import com.nowcoder.model.Message;
 import com.nowcoder.model.User;
+import com.nowcoder.model.UserHolder;
 import com.nowcoder.model.ViewObject;
 import com.nowcoder.service.MessageService;
 import com.nowcoder.service.UserService;
@@ -39,6 +40,9 @@ public class MessageController {
     @Autowired
     private UserService userService;
 
+    @Autowired
+    private UserHolder userHolder;
+
 
     @LoginRequired//必须登录才能发消息
     @RequestMapping("/msg/addMessage")
@@ -68,21 +72,18 @@ public class MessageController {
 
     @LoginRequired
     @RequestMapping("/msg/list")
-    public String conversationList(Model model, @RequestParam("userId") String userId) {
+    public String conversationList(Model model) {
         try {
-            List<Message> messageList = messageService.getConversationList(userId, 0, 10);
+            int localUserId = userHolder.getUser().getId();
+            List<Message> conversationList = messageService.getConversationList(localUserId, 0, 10);
             List<ViewObject> viewObjects = new ArrayList<>();
-            for (Message message : messageList) {
+            for (Message message : conversationList) {
                 ViewObject viewObject = new ViewObject();
-                viewObject.set("message", message);
-                //获取发送者的头像
-                User user = userService.getUser(message.getFromId());
-                if (user == null) {
-                    //忽略本条消息
-                    continue;
-                }
-                viewObject.set("headUrl", user.getHeadUrl());
-                viewObject.set("userId", user.getId());
+                viewObject.set("conversation", message);
+                //获取对方的
+                int targetId = localUserId == message.getFromId() ? message.getToId() : localUserId;
+                User user = userService.getUser(targetId);
+                viewObject.set("target", user);
                 viewObjects.add(viewObject);
 
             }
@@ -115,7 +116,7 @@ public class MessageController {
             }
             model.addAttribute("messages", viewObjects);
         } catch (Exception e) {
-            log.error("获取详细信息失败:[{}]", e.getMessage());
+            log.error("获取对话失败:[{}]", e.getMessage());
         }
         return "letterDetail";
     }

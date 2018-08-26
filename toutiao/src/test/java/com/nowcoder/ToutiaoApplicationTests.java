@@ -37,8 +37,8 @@ public class ToutiaoApplicationTests {
 //		List<Message> messages = messageDao.getConversationDetail("1_12", 0, 10);
 //		System.out.println(messages.toString());
 
-		List<Message> messages = messageDao.getConversationList("12", 0, 10);
-		System.out.println(messages.toString());
+		//List<Message> messages = messageDao.getConversationList("12", 0, 10);
+		//System.out.println(messages.toString());
 	}
 
 }

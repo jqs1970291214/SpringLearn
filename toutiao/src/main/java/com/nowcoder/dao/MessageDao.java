@@ -52,7 +52,7 @@ public interface MessageDao {
             "        )t\n"," inner join ",TABLE_NAME, " msg on t.maxid = msg.id\n" +
             "    order by created_date desc\n" +
             "    limit #{offset},#{limit}"})
-    List<Message> getConversationList(@Param("userId") String userId,
+    List<Message> getConversationList(@Param("userId") int userId,
                                         @Param("offset") int offset,
                                         @Param("limit") int limit);
 

@@ -15,7 +15,8 @@ public enum ResultEnum {
     LOGIN_REQUIRED(404,"you need to log in first"),
     PASS_ERROR(405,"password is wrong or empty"),
     UPLOAD_FAILED(406,"file upload failed"),
-    FILE_READ_FAILED(407,"file read failed");
+    FILE_READ_FAILED(407,"file read failed"),
+    USERID_MISMATCH(408,"user id mismatch");
 
 
     private Integer status;
