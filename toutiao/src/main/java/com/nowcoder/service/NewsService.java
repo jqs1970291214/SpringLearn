@@ -25,6 +25,10 @@ public class NewsService {
     private NewsDao newsDao;
 
 
+    public void updateLikeCount(int newsId, int likeCount) {
+        newsDao.updateLikeCount(newsId, likeCount);
+    }
+
     public List<News> getLatestNews(int userId, int offset, int limit) {
         return newsDao.selectByUserIdAndOffset(userId, offset, limit);
     }

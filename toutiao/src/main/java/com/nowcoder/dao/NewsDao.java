@@ -30,6 +30,11 @@ public interface NewsDao {
     @Update({"update ", TABLE_NAME, "set title = #{title},link = #{link},image = #{image},like_count = #{likeCount},comment_count = #{commentCount} where id = #{id}"})
     void updateNews(News news);
 
+    //更新点赞数量
+    @Update({"update ", TABLE_NAME, "set like_count = #{likeCount} where id = #{newsId}"})
+    void updateLikeCount(@Param("newsId") int newsId, @Param("likeCount") int likeCount);
+
+
 
     //使用xml配置
     List<News> selectByUserIdAndOffset(@Param("userId") int userId, @Param("offset") int offset,
