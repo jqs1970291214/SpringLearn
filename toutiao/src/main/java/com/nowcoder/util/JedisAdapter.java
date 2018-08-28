@@ -82,7 +82,7 @@ public class JedisAdapter implements InitializingBean {
     }
 
     //集合中的数量
-    public long sismem(String key) {
+    public long scard(String key) {
         Jedis jedis = null;
         try {
             jedis = jedisPool.getResource();
