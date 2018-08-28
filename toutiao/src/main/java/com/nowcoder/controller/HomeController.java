@@ -64,7 +64,7 @@ public class HomeController {
     public String userIndex(Model model, @PathVariable("userId") int userId) {
         model.addAttribute("vos", getNews(userId, 0, 10));
         return "home";
-    };
+    }
 
 
 

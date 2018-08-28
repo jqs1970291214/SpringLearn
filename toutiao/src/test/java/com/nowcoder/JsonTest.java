@@ -1,11 +1,14 @@
 package com.nowcoder;
 
+import com.fasterxml.jackson.annotation.JacksonAnnotation;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nowcoder.model.Ticket;
+import org.apache.commons.lang.builder.ToStringBuilder;
 import org.springframework.boot.json.JsonParser;
 import org.springframework.boot.json.JsonParserFactory;
 
+import java.io.IOException;
 import java.util.Date;
 import java.util.Map;
 
@@ -17,14 +20,14 @@ import java.util.Map;
  * @date 2018/8/22 15:13
  */
 public class JsonTest {
-    public static void main(String[] args) throws JsonProcessingException {
-        JsonParser parser = JsonParserFactory.getJsonParser();
-        String toParse = "{\"hash\":\"FnrXFiXgCmPs11khP3zeCMZfa1u8\",\"key\":\"23fbd4b938.jpg\"}";
-
-
-        Map<String, Object> result = parser.parseMap(toParse);
-        System.out.println(result.get("key").toString());
-
+    public static void main(String[] args) throws IOException {
+//        JsonParser parser = JsonParserFactory.getJsonParser();
+//        String toParse = "{\"hash\":\"FnrXFiXgCmPs11khP3zeCMZfa1u8\",\"key\":\"23fbd4b938.jpg\"}";
+//
+//
+//        Map<String, Object> result = parser.parseMap(toParse);
+//        System.out.println(result.get("key").toString());
+//
         ObjectMapper mapper = new ObjectMapper();
         Ticket ticket = new Ticket();
         ticket.setTicket("1dasdasd");
@@ -34,6 +37,11 @@ public class JsonTest {
         ticket.setId(1);
         String ts = mapper.writeValueAsString(ticket);
         System.out.println(ts);
+        Ticket t = mapper.readValue(ts, Ticket.class);
+        System.out.println(t.getExpired());
+        System.out.println(ToStringBuilder.reflectionToString(t));
+
+
 
     }
 }
