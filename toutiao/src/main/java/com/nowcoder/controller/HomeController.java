@@ -2,6 +2,7 @@ package com.nowcoder.controller;
 
 import com.nowcoder.model.News;
 import com.nowcoder.model.ViewObject;
+import com.nowcoder.service.LikeService;
 import com.nowcoder.service.NewsService;
 import com.nowcoder.service.UserService;
 import lombok.extern.slf4j.Slf4j;
@@ -33,6 +34,10 @@ public class HomeController {
 
     @Autowired
     private NewsService newsService;
+
+    @Autowired
+    private LikeService likeService;
+
 
     private List<ViewObject> getNews(int userId, int offset, int limit) {
         List<News> newsList = newsService.getLatestNews(userId, offset, limit);

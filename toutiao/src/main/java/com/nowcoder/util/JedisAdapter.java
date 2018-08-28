@@ -38,7 +38,7 @@ public class JedisAdapter implements InitializingBean {
     public long sadd(String key, String value) {
         Jedis jedis = null;
         try {
-            jedis = jedisPool.getResource();
+            jedis = this.getResources();
             return jedis.sadd(key, value);
         } catch (Exception e) {
             log.error("Jedis错误:[{}]", e.getMessage());

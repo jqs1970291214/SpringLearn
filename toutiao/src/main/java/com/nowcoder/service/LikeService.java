@@ -46,7 +46,7 @@ public class LikeService {
         jedisAdapter.srem(likeKey, String.valueOf(userId));
         String dislikeKey = RedisKeyUtil.getDislikeKey(entityId, entityType);
         jedisAdapter.sadd(dislikeKey, String.valueOf(userId));
-        return jedisAdapter.scard(dislikeKey); //返回当前踩人数
+        return jedisAdapter.scard(likeKey); //返回当前点赞人数
     }
 
 }

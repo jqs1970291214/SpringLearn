@@ -32,12 +32,16 @@ public class LikeController {
     @Autowired
     private NewsService newsService;
 
+
+    //*** 都返回点赞的数量（只关注点赞的数量，不记录点踩的数量） ***
+
     @LoginRequired
     @RequestMapping("/like")
     @ResponseBody
     public ApiResult like(@RequestParam("newsId") int newsId) {
         int userId = holder.getUser().getId();
         long likeCount = likeService.like(userId, newsId, EntityType.ENTITY_NEWS);
+        newsService.updateLikeCount(newsId, (int) likeCount);
         ApiResult apiResult = ResultUtil.success();
         apiResult.put("likeCount", likeCount);
         return apiResult;
@@ -48,9 +52,10 @@ public class LikeController {
     @ResponseBody
     public ApiResult dislike(@RequestParam("newsId") int newsId) {
         int userId = holder.getUser().getId();
-        long dislikeCount = likeService.dislike(userId, newsId, EntityType.ENTITY_NEWS);
+        long likeCount = likeService.dislike(userId, newsId, EntityType.ENTITY_NEWS);
+        newsService.updateLikeCount(newsId, (int) likeCount);
         ApiResult apiResult = ResultUtil.success();
-        apiResult.put("disLikeCount", dislikeCount);
+        apiResult.put("likeCount", likeCount);
         return apiResult;
     }
 
