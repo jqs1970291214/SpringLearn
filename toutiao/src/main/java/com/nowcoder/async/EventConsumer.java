@@ -3,6 +3,7 @@ package com.nowcoder.async;
 import com.fasterxml.jackson.annotation.JacksonAnnotationsInside;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nowcoder.util.JedisAdapter;
+import com.nowcoder.util.RedisKeyUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.InitializingBean;
@@ -11,6 +12,8 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Service;
 
+import javax.management.relation.RoleUnresolved;
+import java.io.IOException;
 import java.util.*;
 
 /**
@@ -50,6 +53,36 @@ public class EventConsumer implements InitializingBean {
                 }
             }
         }
+        Runnable runnable = () -> {
+            String key = RedisKeyUtil.getEventQueueKey();
+            while (true) {
+                //一直等,阻塞
+                List<String> events = jedisAdapter.brpop(0, key);
+                for (String elem : events) {
+                    if (elem.equals(key)) {
+                        continue;
+                    }
+                    try {
+                        EventModel eventModel = mapper.readValue(elem, EventModel.class);
+
+                        if (!config.containsKey(eventModel.getType())) {
+                            log.error("不能识别的EventModel:[{}]");
+                            continue;
+                        }
+
+                        for (EventHandler handler : config.get(eventModel.getType())) {
+                            handler.doHandle(eventModel);
+                        }
+                    } catch (IOException e) {
+                        log.error("IOException:[{}]", e.getMessage());
+                    }
+                }
+            }
+        };
+        Thread thread = new Thread();
+        thread.start();
+
+
     }
 
 
