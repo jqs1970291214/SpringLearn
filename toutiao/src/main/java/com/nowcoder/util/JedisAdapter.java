@@ -98,5 +98,37 @@ public class JedisAdapter implements InitializingBean {
         }
     }
 
+    //入队
+    public long lpush(String key,String value) {
+        Jedis jedis = null;
+        try {
+            jedis = jedisPool.getResource();
+            return jedis.lpush(key,value);
+        } catch (Exception e) {
+            log.error("Jedis错误:[{}]", e.getMessage());
+            return 0;
+        } finally {
+            if (jedis != null) {
+                jedis.close();
+            }
+        }
+    }
+
+    //出队
+    public String rpop(String key) {
+        Jedis jedis = null;
+        try {
+            jedis = jedisPool.getResource();
+            return jedis.rpop(key);
+        } catch (Exception e) {
+            log.error("Jedis错误:[{}]", e.getMessage());
+            return null;
+        } finally {
+            if (jedis != null) {
+                jedis.close();
+            }
+        }
+    }
+
 
 }
