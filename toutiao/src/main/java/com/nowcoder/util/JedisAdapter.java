@@ -4,6 +4,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 
@@ -14,7 +15,7 @@ import redis.clients.jedis.JedisPool;
  * @author Junqson
  * @date 2018/8/28 15:37
  */
-@Component
+@Service
 @Slf4j
 public class JedisAdapter implements InitializingBean {
     private JedisPool jedisPool = null;
