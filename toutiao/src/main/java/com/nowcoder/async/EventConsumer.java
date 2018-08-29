@@ -1,20 +1,19 @@
 package com.nowcoder.async;
 
-import com.fasterxml.jackson.annotation.JacksonAnnotationsInside;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.nowcoder.util.JedisAdapter;
 import com.nowcoder.util.RedisKeyUtil;
 import lombok.extern.slf4j.Slf4j;
-import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.InitializingBean;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.ApplicationContext;
-import org.springframework.context.ApplicationContextAware;
 import org.springframework.stereotype.Service;
-
-import javax.management.relation.RoleUnresolved;
 import java.io.IOException;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * 事件消费器
@@ -39,7 +38,7 @@ public class EventConsumer implements InitializingBean {
     private Map<EventType, List<EventHandler>> config = new HashMap<>();
 
     @Override
-    public void afterPropertiesSet() throws Exception {
+    public void afterPropertiesSet(){
         //寻找ioc容器中的EventHandler，构造EventType对应的处理链
         Map<String, EventHandler> beans = applicationContext.getBeansOfType(EventHandler.class);
         if (beans != null) {
@@ -79,7 +78,7 @@ public class EventConsumer implements InitializingBean {
                 }
             }
         };
-        Thread thread = new Thread();
+        Thread thread = new Thread(runnable);
         thread.start();
 
 

@@ -55,7 +55,7 @@ public class JedisAdapter implements InitializingBean {
     public long srem(String key, String value) {
         Jedis jedis = null;
         try {
-            jedis = jedisPool.getResource();
+            jedis = this.getResources();
             return jedis.srem(key, value);
         } catch (Exception e) {
             log.error("Jedis错误:[{}]", e.getMessage());
@@ -71,7 +71,7 @@ public class JedisAdapter implements InitializingBean {
     public boolean sismem(String key, String value) {
         Jedis jedis = null;
         try {
-            jedis = jedisPool.getResource();
+            jedis = this.getResources();
             return jedis.sismember(key, value);
         } catch (Exception e) {
             log.error("Jedis错误:[{}]", e.getMessage());
@@ -87,7 +87,7 @@ public class JedisAdapter implements InitializingBean {
     public long scard(String key) {
         Jedis jedis = null;
         try {
-            jedis = jedisPool.getResource();
+            jedis = this.getResources();
             return jedis.scard(key);
         } catch (Exception e) {
             log.error("Jedis错误:[{}]", e.getMessage());
@@ -103,7 +103,7 @@ public class JedisAdapter implements InitializingBean {
     public long lpush(String key,String value) {
         Jedis jedis = null;
         try {
-            jedis = jedisPool.getResource();
+            jedis = this.getResources();
             return jedis.lpush(key,value);
         } catch (Exception e) {
             log.error("Jedis错误:[{}]", e.getMessage());
@@ -119,7 +119,7 @@ public class JedisAdapter implements InitializingBean {
     public String rpop(String key) {
         Jedis jedis = null;
         try {
-            jedis = jedisPool.getResource();
+            jedis = this.getResources();
             return jedis.rpop(key);
         } catch (Exception e) {
             log.error("Jedis错误:[{}]", e.getMessage());
@@ -135,7 +135,7 @@ public class JedisAdapter implements InitializingBean {
     public List<String> brpop(int timeout, String key) {
         Jedis jedis = null;
         try {
-            jedis = jedisPool.getResource();
+            jedis = this.getResources();
             return jedis.brpop(timeout, key);
         } catch (Exception e) {
             log.error("Jedis错误:[{}]", e.getMessage());

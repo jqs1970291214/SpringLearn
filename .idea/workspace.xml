@@ -73,10 +73,10 @@
           <entry key="comment" value="4" />
           <entry key="gitignore" value="3" />
           <entry key="html" value="13" />
-          <entry key="java" value="186" />
+          <entry key="java" value="187" />
           <entry key="message" value="6" />
           <entry key="news" value="2" />
-          <entry key="properties" value="2" />
+          <entry key="properties" value="3" />
           <entry key="sql" value="8" />
           <entry key="user" value="5" />
           <entry key="xml" value="8" />
@@ -87,9 +87,9 @@
           <entry key="CLASS" value="38" />
           <entry key="Database Element" value="17" />
           <entry key="HTML" value="13" />
-          <entry key="JAVA" value="186" />
+          <entry key="JAVA" value="187" />
           <entry key="PLAIN_TEXT" value="3" />
-          <entry key="Properties" value="2" />
+          <entry key="Properties" value="3" />
           <entry key="SQL" value="5" />
           <entry key="Scratch" value="3" />
           <entry key="XML" value="8" />
@@ -100,7 +100,7 @@
           <entry key="cell" value="210" />
           <entry key="gitignore" value="11" />
           <entry key="html" value="414" />
-          <entry key="java" value="18461" />
+          <entry key="java" value="18638" />
           <entry key="properties" value="222" />
           <entry key="sql" value="561" />
           <entry key="txt" value="13" />
@@ -110,7 +110,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="414" />
-          <entry key="JAVA" value="18461" />
+          <entry key="JAVA" value="18638" />
           <entry key="PLAIN_TEXT" value="24" />
           <entry key="Properties" value="222" />
           <entry key="SQL" value="12" />
@@ -123,10 +123,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/toutiao/src/main/resources/application.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="581">
+              <caret line="20" column="21" selection-start-line="20" selection-end-line="20" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/util/JedisAdapter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="423">
-              <caret line="142" column="19" lean-forward="true" selection-start-line="142" selection-start-column="19" selection-end-line="142" selection-end-column="19" />
+            <state relative-caret-position="753">
+              <caret line="144" column="26" lean-forward="true" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -137,8 +146,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/async/EventModel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+            <state relative-caret-position="116">
+              <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#578#579#0" expanded="true" />
@@ -165,8 +174,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/async/EventHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
-              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="-6">
+              <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/toutiao/src/test/java/com/nowcoder/JsonTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -174,8 +192,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/async/EventConsumer.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="71" column="28" lean-forward="true" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+            <state relative-caret-position="99">
+              <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -195,8 +213,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/toutiao/src/test/java/com/nowcoder/ToutiaoApplicationTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="513">
-              <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
+            <state relative-caret-position="62">
+              <caret line="60" column="28" lean-forward="true" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -204,8 +222,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/async/handler/LikeHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="169">
-              <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+            <state relative-caret-position="433">
+              <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#392#393#0" expanded="true" />
@@ -222,19 +240,6 @@
               <caret line="17" column="6" lean-forward="true" selection-start-line="17" selection-start-column="6" selection-end-line="17" selection-end-column="6" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/util/RedisKeyUtil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="264">
-              <caret line="20" column="18" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="18" />
-              <folding>
-                <element signature="e#392#393#0" expanded="true" />
-                <element signature="e#424#425#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -309,10 +314,10 @@
         <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/async/EventProducer.java" />
         <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/controller/IndexController.java" />
         <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/async/handler/LikeHandler.java" />
-        <option value="$PROJECT_DIR$/toutiao/src/test/java/com/nowcoder/ToutiaoApplicationTests.java" />
         <option value="$PROJECT_DIR$/toutiao/src/test/java/com/nowcoder/JsonTest.java" />
-        <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/util/JedisAdapter.java" />
         <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/util/JacksonUtil.java" />
+        <option value="$PROJECT_DIR$/toutiao/src/test/java/com/nowcoder/ToutiaoApplicationTests.java" />
+        <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/util/JedisAdapter.java" />
         <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/async/EventConsumer.java" />
       </list>
     </option>
@@ -432,6 +437,14 @@
               <item name="springlearn" type="462c0819:PsiDirectoryNode" />
               <item name="toutiao" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springlearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="springlearn" type="462c0819:PsiDirectoryNode" />
+              <item name="toutiao" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -468,7 +481,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Junqson/IdeaProjects/springlearn/toutiao/src/main/resources/application.properties&#10;BufferedReader&#9;PSI&#9;JAVA://java.io.BufferedReader" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535547907360" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535551044996" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/toutiao" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -499,7 +512,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.JsonTest">
+  <component name="RunManager" selected="JUnit.ToutiaoApplicationTests.contextLoads">
     <configuration name="FileText" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nowcoder.FileText" />
       <module name="toutiao" />
@@ -585,8 +598,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.JsonTest" />
         <item itemvalue="JUnit.ToutiaoApplicationTests.contextLoads" />
+        <item itemvalue="Application.JsonTest" />
         <item itemvalue="Application.JedisAdapter" />
         <item itemvalue="Application.JedisTest" />
         <item itemvalue="Application.FileText" />
@@ -618,20 +631,11 @@
       <workItem from="1535361026894" duration="4106000" />
       <workItem from="1535379053182" duration="11000" />
       <workItem from="1535441769430" duration="8497000" />
-      <workItem from="1535516917805" duration="6238000" />
+      <workItem from="1535516917805" duration="8319000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ToutiaoApplicationTests_contextLoads - 2018.08.26 at 15h 51m 55s.xml">
-      <configuration name="ToutiaoApplicationTests.contextLoads" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ToutiaoApplicationTests - 2018.08.26 at 17h 39m 30s.xml">
-      <configuration name="ToutiaoApplicationTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ToutiaoApplicationTests - 2018.08.26 at 17h 42m 10s.xml">
-      <configuration name="ToutiaoApplicationTests" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ToutiaoApplicationTests - 2018.08.26 at 17h 45m 13s.xml">
       <configuration name="ToutiaoApplicationTests" configurationId="JUnit" />
     </history-entry>
@@ -653,15 +657,24 @@
     <history-entry file="ToutiaoApplicationTests_contextLoads - 2018.08.29 at 15h 10m 29s.xml">
       <configuration name="ToutiaoApplicationTests.contextLoads" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ToutiaoApplicationTests_contextLoads - 2018.08.29 at 21h 35m 38s.xml">
+      <configuration name="ToutiaoApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ToutiaoApplicationTests_contextLoads - 2018.08.29 at 21h 43m 55s.xml">
+      <configuration name="ToutiaoApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ToutiaoApplicationTests_contextLoads - 2018.08.29 at 21h 44m 45s.xml">
+      <configuration name="ToutiaoApplicationTests.contextLoads" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="76092000" />
+    <option name="totallyTimeSpent" value="78173000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988662" visible="true" weight="0.22855228" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988662" visible="true" weight="0.22855228" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -674,7 +687,7 @@
       <window_info anchor="bottom" id="Debug" order="2" weight="0.0" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49946353" visible="true" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.49946353" visible="true" weight="0.55162656" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
       <window_info anchor="bottom" id="Terminal" order="8" weight="0.0" />
@@ -918,13 +931,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toutiao/src/main/resources/application.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="251">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/controller/LikeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="588">
@@ -1015,10 +1021,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/function/IntPredicate.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/async/handler/LikeHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="169">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
+        <state relative-caret-position="433">
+          <caret line="27" column="39" selection-start-line="27" selection-start-column="39" selection-end-line="27" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#392#393#0" expanded="true" />
@@ -1027,34 +1040,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/function/IntPredicate.java">
+    <entry file="file://$PROJECT_DIR$/toutiao/src/main/resources/application.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="47" column="30" lean-forward="true" selection-start-line="47" selection-start-column="30" selection-end-line="47" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toutiao/src/test/java/com/nowcoder/JsonTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1498">
-          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+        <state relative-caret-position="581">
+          <caret line="20" column="21" selection-start-line="20" selection-end-line="20" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/util/JedisAdapter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="423">
-          <caret line="142" column="19" lean-forward="true" selection-start-line="142" selection-start-column="19" selection-end-line="142" selection-end-column="19" />
+        <state relative-caret-position="753">
+          <caret line="144" column="26" lean-forward="true" selection-start-line="144" selection-start-column="26" selection-end-line="144" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao/src/test/java/com/nowcoder/ToutiaoApplicationTests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="60" column="28" lean-forward="true" selection-start-line="60" selection-start-column="28" selection-end-line="60" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/util/JacksonUtil.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1881">
+          <caret line="57" column="32" lean-forward="true" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao/src/test/java/com/nowcoder/JsonTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="57" column="4" selection-start-line="57" selection-start-column="4" selection-end-line="57" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/async/EventHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-6">
+          <caret line="2" column="22" lean-forward="true" selection-start-line="2" selection-start-column="22" selection-end-line="2" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/async/EventModel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="38" lean-forward="true" selection-start-line="38" selection-end-line="38" />
+        <state relative-caret-position="116">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="41" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#578#579#0" expanded="true" />
@@ -1077,31 +1111,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/async/EventHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
-          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toutiao/src/test/java/com/nowcoder/ToutiaoApplicationTests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="513">
-          <caret line="69" lean-forward="true" selection-start-line="69" selection-end-line="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/util/JacksonUtil.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1881">
-          <caret line="57" column="32" lean-forward="true" selection-start-line="57" selection-start-column="32" selection-end-line="57" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/async/EventConsumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="71" column="28" lean-forward="true" selection-start-line="71" selection-start-column="28" selection-end-line="71" selection-end-column="28" />
+        <state relative-caret-position="99">
+          <caret line="36" column="4" selection-start-line="36" selection-start-column="4" selection-end-line="36" selection-end-column="4" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
