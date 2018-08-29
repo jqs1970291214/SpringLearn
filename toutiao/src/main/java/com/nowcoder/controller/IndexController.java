@@ -29,7 +29,7 @@ public class IndexController {
     @Autowired
     private ToutiaoService toutiaoService;
 
-    private static final Logger logger = LoggerFactory.getLogger(LogAspect.class);
+    private static final Logger logger = LoggerFactory.getLogger(IndexController.class);
 
 
     @RequestMapping(path = {"/", "/index"},method = {RequestMethod.GET,RequestMethod.POST})

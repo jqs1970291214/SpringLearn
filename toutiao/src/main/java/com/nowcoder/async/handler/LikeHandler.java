@@ -4,6 +4,8 @@ package com.nowcoder.async.handler;
 import com.nowcoder.async.EventHandler;
 import com.nowcoder.async.EventModel;
 import com.nowcoder.async.EventType;
+import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Controller;
 
 import java.util.Arrays;
 import java.util.List;
@@ -15,6 +17,7 @@ import java.util.List;
  * @author Junqson
  * @date 2018/8/29 14:43
  */
+@Component
 public class LikeHandler implements EventHandler {
     @Override
     public void doHandle(EventModel model) {
