@@ -69,30 +69,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="class" value="38" />
+          <entry key="class" value="40" />
           <entry key="comment" value="4" />
           <entry key="gitignore" value="3" />
           <entry key="html" value="13" />
-          <entry key="java" value="201" />
+          <entry key="java" value="203" />
           <entry key="message" value="8" />
           <entry key="news" value="3" />
           <entry key="properties" value="3" />
           <entry key="sql" value="8" />
           <entry key="user" value="6" />
-          <entry key="xml" value="8" />
+          <entry key="xml" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CLASS" value="38" />
+          <entry key="CLASS" value="40" />
           <entry key="Database Element" value="21" />
           <entry key="HTML" value="13" />
-          <entry key="JAVA" value="201" />
+          <entry key="JAVA" value="203" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Properties" value="3" />
           <entry key="SQL" value="5" />
           <entry key="Scratch" value="3" />
-          <entry key="XML" value="8" />
+          <entry key="XML" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -101,22 +101,22 @@
           <entry key="dummy" value="9" />
           <entry key="gitignore" value="11" />
           <entry key="html" value="414" />
-          <entry key="java" value="19684" />
+          <entry key="java" value="20335" />
           <entry key="properties" value="222" />
           <entry key="sql" value="561" />
           <entry key="txt" value="13" />
-          <entry key="xml" value="38" />
+          <entry key="xml" value="42" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="414" />
-          <entry key="JAVA" value="19684" />
+          <entry key="JAVA" value="20335" />
           <entry key="PLAIN_TEXT" value="33" />
           <entry key="Properties" value="222" />
           <entry key="SQL" value="12" />
           <entry key="Scratch" value="822" />
-          <entry key="XML" value="38" />
+          <entry key="XML" value="42" />
         </counts>
       </usages-collector>
     </session>
@@ -126,10 +126,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/async/handler/LikeHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="40" column="84" lean-forward="true" selection-start-line="40" selection-start-column="84" selection-end-line="40" selection-end-column="84" />
+            <state relative-caret-position="456">
+              <caret line="51" selection-start-line="51" selection-end-line="51" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/util/MailSender.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1584">
+              <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+              <folding>
+                <element signature="e#0#1400#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -138,8 +150,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/async/handler/LoginExceptionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+            <state relative-caret-position="330">
+              <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#451#452#0" expanded="true" />
@@ -149,29 +161,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/controller/LoginController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="84">
-              <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+              <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/interceptor/LoginInterceptor.java">
+        <entry file="file://$PROJECT_DIR$/toutiao/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-38">
-              <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/service/UserService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="820">
-              <caret line="113" column="25" lean-forward="true" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="25" />
+            <state relative-caret-position="409">
+              <caret line="105" selection-start-line="105" selection-end-line="105" />
             </state>
           </provider>
         </entry>
@@ -179,48 +182,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/util/AppUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="61">
-              <caret line="29" column="53" lean-forward="true" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://c08f85a2-d435-4d15-8bd9-41eb6872cf43/schema/nowcoder/table/message">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/service/NewsService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="429">
-              <caret line="68" column="5" lean-forward="true" selection-start-line="68" selection-start-column="5" selection-end-line="68" selection-end-column="5" />
-              <folding>
-                <element signature="e#664#665#0" expanded="true" />
-                <element signature="e#722#723#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="das://c08f85a2-d435-4d15-8bd9-41eb6872cf43/schema/nowcoder/table/user">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/model/Message.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="358">
-              <caret line="23" column="25" lean-forward="true" selection-start-line="23" selection-start-column="25" selection-end-line="23" selection-end-column="25" />
+            <state relative-caret-position="1188">
+              <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -248,9 +211,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/model/News.java" />
-        <option value="$PROJECT_DIR$/toutiao/src/test/java/com/nowcoder/ErrorHandleTest.java" />
-        <option value="$PROJECT_DIR$/toutiao/src/main/resources/templates/login.html" />
         <option value="$PROJECT_DIR$/toutiao/src/main/resources/templates/header.html" />
         <option value="$PROJECT_DIR$/toutiao/src/main/resources/templates/loginPage.html" />
         <option value="$PROJECT_DIR$/toutiao/src/main/resources/templates/home.html" />
@@ -273,7 +233,6 @@
         <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/dao/MessageDao.java" />
         <option value="$PROJECT_DIR$/toutiao/src/main/resources/templates/letter.html" />
         <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/controller/MessageController.java" />
-        <option value="$PROJECT_DIR$/toutiao/pom.xml" />
         <option value="$PROJECT_DIR$/toutiao/src/test/java/com/nowcoder/JedisAdapter.java" />
         <option value="$PROJECT_DIR$/toutiao/src/main/resources/application.properties" />
         <option value="$PROJECT_DIR$/toutiao/src/test/java/com/nowcoder/JedisTest.java" />
@@ -299,6 +258,10 @@
         <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/async/handler/LoginHandler.java" />
         <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/async/handler/LoginExceptionHandler.java" />
         <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/controller/LoginController.java" />
+        <option value="$PROJECT_DIR$/toutiao/pom.xml" />
+        <option value="$PROJECT_DIR$/toutiao/src/test/java/com/nowcoder/SimpleMail.java" />
+        <option value="$PROJECT_DIR$/toutiao/src/test/java/com/nowcoder/SampleMail.java" />
+        <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/util/MailSender.java" />
       </list>
     </option>
   </component>
@@ -460,27 +423,25 @@
             </path>
             <path>
               <item name="springlearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springlearn" type="462c0819:PsiDirectoryNode" />
-              <item name="toutiao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
             </path>
             <path>
               <item name="springlearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springlearn" type="462c0819:PsiDirectoryNode" />
-              <item name="toutiao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: javax.mail:javax.mail-api:1.4.7" type="70bed36:NamedLibraryElementNode" />
             </path>
             <path>
               <item name="springlearn" type="b2602c69:ProjectViewProjectNode" />
-              <item name="springlearn" type="462c0819:PsiDirectoryNode" />
-              <item name="toutiao" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="nowcoder" type="462c0819:PsiDirectoryNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: javax.mail:javax.mail-api:1.4.7" type="70bed36:NamedLibraryElementNode" />
+              <item name="javax.mail-api-1.4.7.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springlearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="Maven: javax.mail:javax.mail-api:1.4.7" type="70bed36:NamedLibraryElementNode" />
+              <item name="javax.mail-api-1.4.7.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="mail" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -501,7 +462,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Junqson/IdeaProjects/springlearn/toutiao/src/main/resources/application.properties&#10;BufferedReader&#9;PSI&#9;JAVA://java.io.BufferedReader" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535612222952" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535629959403" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/toutiao" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -532,20 +493,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.ToutiaoApplication">
-    <configuration name="FileText" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.nowcoder.FileText" />
-      <module name="toutiao" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nowcoder.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.SampleMail">
     <configuration name="JedisAdapter" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.nowcoder.util.JedisAdapter" />
       <module name="toutiao" />
@@ -585,6 +533,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SampleMail" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.nowcoder.SampleMail" />
+      <module name="toutiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.nowcoder.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ToutiaoApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="toutiao" />
       <extension name="coverage">
@@ -611,18 +572,18 @@
     <list>
       <item itemvalue="Spring Boot.ToutiaoApplication" />
       <item itemvalue="JUnit.ToutiaoApplicationTests.contextLoads" />
-      <item itemvalue="Application.FileText" />
       <item itemvalue="Application.JedisTest" />
       <item itemvalue="Application.JedisAdapter" />
       <item itemvalue="Application.JsonTest" />
+      <item itemvalue="Application.SampleMail" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.SampleMail" />
         <item itemvalue="JUnit.ToutiaoApplicationTests.contextLoads" />
         <item itemvalue="Application.JsonTest" />
         <item itemvalue="Application.JedisAdapter" />
         <item itemvalue="Application.JedisTest" />
-        <item itemvalue="Application.FileText" />
       </list>
     </recent_temporary>
   </component>
@@ -653,7 +614,7 @@
       <workItem from="1535441769430" duration="8497000" />
       <workItem from="1535516917805" duration="8807000" />
       <workItem from="1535551651318" duration="625000" />
-      <workItem from="1535599606617" duration="3314000" />
+      <workItem from="1535599606617" duration="6411000" />
     </task>
     <servers />
   </component>
@@ -690,12 +651,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="82600000" />
+    <option name="totallyTimeSpent" value="85697000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988662" visible="true" weight="0.23525469" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.4988662" visible="true" weight="0.23525469" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -708,10 +670,10 @@
       <window_info anchor="bottom" id="Debug" order="2" weight="0.0" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49946353" weight="0.5671853" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49946353" visible="true" weight="0.0" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.5671853" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.42574257" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005365" side_tool="true" weight="0.49773243" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.35977337" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3281471" />
@@ -743,35 +705,6 @@
     </ignored-roots>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-annotations/2.6.7/jackson-annotations-2.6.7.jar!/com/fasterxml/jackson/annotation/JacksonAnnotation.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="66">
-          <caret line="5" column="26" lean-forward="true" selection-start-line="5" selection-start-column="26" selection-end-line="5" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.6.7/jackson-databind-2.6.7.jar!/com/fasterxml/jackson/databind/ObjectReader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-3597">
-          <caret line="57" column="29" lean-forward="true" selection-start-line="57" selection-start-column="29" selection-end-line="57" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-databind/2.6.7/jackson-databind-2.6.7.jar!/com/fasterxml/jackson/databind/ObjectMapper.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="107" column="13" selection-start-line="107" selection-start-column="13" selection-end-line="107" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="das://c08f85a2-d435-4d15-8bd9-41eb6872cf43/schema/nowcoder/table/news" />
-    <entry file="jar://$MAVEN_REPOSITORY$/com/fasterxml/jackson/core/jackson-core/2.6.7/jackson-core-2.6.7.jar!/com/fasterxml/jackson/core/JsonProcessingException.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="17" column="9" lean-forward="true" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/util/EntityType.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -1057,6 +990,41 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/controller/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="27" column="3" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/interceptor/LoginInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="41" column="30" lean-forward="true" selection-start-line="41" selection-start-column="30" selection-end-line="41" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="820">
+          <caret line="113" column="25" lean-forward="true" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="105" selection-start-line="105" selection-end-line="105" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://c08f85a2-d435-4d15-8bd9-41eb6872cf43/schema/nowcoder/table/message">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
     <entry file="das://c08f85a2-d435-4d15-8bd9-41eb6872cf43/schema/nowcoder/table/user">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
@@ -1075,34 +1043,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="das://c08f85a2-d435-4d15-8bd9-41eb6872cf43/schema/nowcoder/table/message">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/util/AppUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="61">
-          <caret line="29" column="53" lean-forward="true" selection-start-line="29" selection-start-column="53" selection-end-line="29" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/async/handler/LikeHandler.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="159">
-          <caret line="40" column="84" lean-forward="true" selection-start-line="40" selection-start-column="84" selection-end-line="40" selection-end-column="84" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="1188">
+          <caret line="36" column="21" selection-start-line="36" selection-start-column="21" selection-end-line="36" selection-end-column="21" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/async/handler/LoginExceptionHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="429">
-          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+        <state relative-caret-position="330">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#451#452#0" expanded="true" />
@@ -1111,24 +1062,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/service/UserService.java">
+    <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/async/handler/LikeHandler.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="820">
-          <caret line="113" column="25" lean-forward="true" selection-start-line="113" selection-start-column="25" selection-end-line="113" selection-end-column="25" />
+        <state relative-caret-position="456">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/interceptor/LoginInterceptor.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/jre/lib/rt.jar!/sun/misc/Launcher.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-38">
-          <caret line="34" column="14" lean-forward="true" selection-start-line="34" selection-start-column="14" selection-end-line="34" selection-end-column="14" />
+        <state relative-caret-position="92">
+          <caret line="199" selection-start-line="199" selection-end-line="199" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/controller/LoginController.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/javax/mail/javax.mail-api/1.4.7/javax.mail-api-1.4.7.jar!/javax/mail/Session.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="27" column="3" lean-forward="true" selection-start-line="27" selection-start-column="3" selection-end-line="27" selection-end-column="3" />
+        <state relative-caret-position="396">
+          <caret line="89" lean-forward="true" selection-end-line="658" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao/src/test/java/com/nowcoder/SampleMail.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="12" column="2" lean-forward="true" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/util/MailSender.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1584">
+          <caret line="48" lean-forward="true" selection-start-line="48" selection-end-line="48" />
+          <folding>
+            <element signature="e#0#1400#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
