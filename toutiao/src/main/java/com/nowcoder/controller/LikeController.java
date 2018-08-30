@@ -1,6 +1,10 @@
 package com.nowcoder.controller;
 
 import com.nowcoder.annotation.LoginRequired;
+import com.nowcoder.async.EventModel;
+import com.nowcoder.async.EventProducer;
+import com.nowcoder.async.EventType;
+import com.nowcoder.model.News;
 import com.nowcoder.model.UserHolder;
 import com.nowcoder.service.LikeService;
 import com.nowcoder.service.NewsService;
@@ -32,6 +36,8 @@ public class LikeController {
     @Autowired
     private NewsService newsService;
 
+    @Autowired
+    private EventProducer producer;
 
     //*** 都返回点赞的数量（只关注点赞的数量，不记录点踩的数量） ***
 
@@ -40,8 +46,17 @@ public class LikeController {
     @ResponseBody
     public ApiResult like(@RequestParam("newsId") int newsId) {
         int userId = holder.getUser().getId();
+
+        //写入redis
         long likeCount = likeService.like(userId, newsId, EntityType.ENTITY_NEWS);
+
+        //db更新喜欢数
+        News news = newsService.getNews(newsId);
         newsService.updateLikeCount(newsId, (int) likeCount);
+        producer.fireEvent(new EventModel(EventType.LIKE)
+                .setActorId(userId).setEntityType(EntityType.ENTITY_NEWS)
+                .setEntityId(newsId).setEntityOwnerId(news.getUserId()));
+
         ApiResult apiResult = ResultUtil.success();
         apiResult.put("likeCount", likeCount);
         return apiResult;

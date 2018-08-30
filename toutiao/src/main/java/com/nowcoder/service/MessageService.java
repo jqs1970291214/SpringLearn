@@ -21,6 +21,11 @@ public class MessageService {
     private MessageDao messageDao;
 
     public int addMessage(Message message) {
+        if (message.getConversationId() == null) {
+            message.setConversationId(message.getFromId() > message.getToId()
+                    ? String.format("%d_%d", message.getToId(), message.getFromId())
+                    : String.format("%d_%d", message.getFromId(), message.getToId()));
+        }
         return messageDao.addMessage(message);
     }
     //获取对话详情
@@ -36,4 +41,6 @@ public class MessageService {
     public int getConversationUnreadCount(int userId, String conversationId) {
         return messageDao.getConversationUnreadCount(userId, conversationId);
     }
+
+    //发送消息
 }

@@ -9,13 +9,16 @@ package com.nowcoder.util;
  */
 public class AppUtils {
 
+    //匿名用户，系统管理员账户
+    public static int ADMIN_ID = 0;
+
 
     //七牛bucket测试域名
     public static String QINIU_DOMAIN = "http://pdngs0qa5.bkt.clouddn.com/";
 
 
     //本应用域名
-    public static String DOMAIN = "http://127.0.0.1:8080/";
+    public static String DOMAIN = "http://localhost:8080/";
 
     // 允许的图片后缀
     public static String[] IMAGE_EXT = {"jpg", "png", "bmp", "jpeg"};
