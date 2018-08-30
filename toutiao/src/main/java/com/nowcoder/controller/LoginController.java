@@ -1,6 +1,8 @@
 package com.nowcoder.controller;
 
 import com.nowcoder.annotation.LoginRequired;
+import com.nowcoder.async.EventModel;
+import com.nowcoder.async.EventProducer;
 import com.nowcoder.model.User;
 import com.nowcoder.model.UserHolder;
 import com.nowcoder.service.UserService;
@@ -33,6 +35,9 @@ public class LoginController {
     @Autowired
     private UserHolder holder;
 
+    @Autowired
+    private EventProducer producer;
+
     @RequestMapping("/loginPage")
     public String loginPage() {
         return "loginPage";
@@ -63,11 +68,14 @@ public class LoginController {
                            @RequestParam(value = "remember",defaultValue = "0") int rem,
                            HttpServletResponse response) {
 
+
+        //loginTicket中的数据主要用于验证cookie，如果没有存储cookie，就认为表中数据无效，如果有人拿cookie前来验证，就验证过期时间
+
         String msg = userService.login(username, password);
 
         if (msg != null) {
             //添加到cookies
-            if (msg.startsWith("t")) {
+            if (msg.startsWith("t")) { //这里应该加上记住登录的条件，rem != 0
                 String ticket = msg.substring(1);
                 //将token绑定到cookie中，不受session的限制，关闭浏览器下次进去还是可以的
                 Cookie cookie = new Cookie("ticket", DigestUtil.Encrypt(ticket));
@@ -77,6 +85,9 @@ public class LoginController {
                     cookie.setMaxAge(60 * 60); //一小时，如果不设浏览器关闭后就无效了
                 }
                 response.addCookie(cookie);
+                //触发登录事件
+//                producer.fireEvent(new EventModel());
+
                 return ResultUtil.success("登录成功");
             }
 
@@ -84,7 +95,8 @@ public class LoginController {
             res.setMsg(msg);
             return res;
         }
-
+        //触发登录事件
+//        producer.fireEvent(new EventModel());
         return ResultUtil.success("登录成功");
     }
 
