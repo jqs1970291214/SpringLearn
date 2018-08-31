@@ -74,7 +74,7 @@
           <entry key="comment" value="4" />
           <entry key="gitignore" value="3" />
           <entry key="html" value="13" />
-          <entry key="java" value="222" />
+          <entry key="java" value="226" />
           <entry key="message" value="8" />
           <entry key="news" value="3" />
           <entry key="properties" value="3" />
@@ -88,7 +88,7 @@
           <entry key="CLASS" value="40" />
           <entry key="Database Element" value="21" />
           <entry key="HTML" value="13" />
-          <entry key="JAVA" value="222" />
+          <entry key="JAVA" value="226" />
           <entry key="PLAIN_TEXT" value="3" />
           <entry key="Properties" value="3" />
           <entry key="SQL" value="5" />
@@ -102,7 +102,7 @@
           <entry key="dummy" value="9" />
           <entry key="gitignore" value="11" />
           <entry key="html" value="414" />
-          <entry key="java" value="21921" />
+          <entry key="java" value="22300" />
           <entry key="properties" value="222" />
           <entry key="sql" value="561" />
           <entry key="txt" value="13" />
@@ -112,7 +112,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="414" />
-          <entry key="JAVA" value="21921" />
+          <entry key="JAVA" value="22300" />
           <entry key="PLAIN_TEXT" value="33" />
           <entry key="Properties" value="222" />
           <entry key="SQL" value="12" />
@@ -141,11 +141,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/toutiao/src/test/java/ThreadTest/AtomicIntegerTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1254">
-              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            <state relative-caret-position="396">
+              <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -153,11 +153,16 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/concurrent/BlockingQueue.java">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/toutiao/src/test/java/ThreadTest/ExecutorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="457">
-              <caret line="223" column="28" lean-forward="true" selection-start-line="223" selection-start-column="28" selection-end-line="223" selection-end-column="28" />
+            <state>
+              <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#235#236#0" expanded="true" />
+                <element signature="e#265#266#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -187,7 +192,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/model/Comment.java" />
         <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/util/EntityType.java" />
         <option value="$PROJECT_DIR$/toutiao/src/main/resources/templates/detail.html" />
         <option value="$PROJECT_DIR$/toutiao/src/main/java/com/nowcoder/service/CommentService.java" />
@@ -238,6 +242,7 @@
         <option value="$PROJECT_DIR$/toutiao/src/test/java/ThreadTest/MultiThread.java" />
         <option value="$PROJECT_DIR$/toutiao/src/test/java/ThreadTest/BlockingQueueTest.java" />
         <option value="$PROJECT_DIR$/toutiao/src/test/java/ThreadTest/AtomicIntegerTest.java" />
+        <option value="$PROJECT_DIR$/toutiao/src/test/java/ThreadTest/ExecutorTest.java" />
       </list>
     </option>
   </component>
@@ -307,6 +312,45 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="ThreadTest" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="springlearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="springlearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="springlearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springlearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springlearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="springlearn" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="concurrent" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -327,7 +371,7 @@
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://C:/Users/Junqson/IdeaProjects/springlearn/toutiao/src/main/resources/application.properties&#10;BufferedReader&#9;PSI&#9;JAVA://java.io.BufferedReader" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535696948926" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535698988677" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/toutiao" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -358,9 +402,22 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.AtomicIntegerTest">
+  <component name="RunManager" selected="Application.ExecutorTest">
     <configuration name="AtomicIntegerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ThreadTest.AtomicIntegerTest" />
+      <module name="toutiao" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ThreadTest.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExecutorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ThreadTest.ExecutorTest" />
       <module name="toutiao" />
       <extension name="coverage">
         <pattern>
@@ -411,22 +468,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ToutiaoApplicationTests.contextLoads" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="toutiao" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.nowcoder.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.nowcoder" />
-      <option name="MAIN_CLASS_NAME" value="com.nowcoder.ToutiaoApplicationTests" />
-      <option name="METHOD_NAME" value="contextLoads" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="ToutiaoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="toutiao" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.nowcoder.ToutiaoApplication" />
@@ -436,19 +477,19 @@
     </configuration>
     <list>
       <item itemvalue="Spring Boot.ToutiaoApplication" />
-      <item itemvalue="JUnit.ToutiaoApplicationTests.contextLoads" />
       <item itemvalue="Application.JsonTest" />
       <item itemvalue="Application.SampleMail" />
       <item itemvalue="Application.MultiThread" />
       <item itemvalue="Application.AtomicIntegerTest" />
+      <item itemvalue="Application.ExecutorTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ExecutorTest" />
         <item itemvalue="Application.AtomicIntegerTest" />
         <item itemvalue="Application.MultiThread" />
         <item itemvalue="Application.JsonTest" />
         <item itemvalue="Application.SampleMail" />
-        <item itemvalue="JUnit.ToutiaoApplicationTests.contextLoads" />
       </list>
     </recent_temporary>
   </component>
@@ -481,7 +522,7 @@
       <workItem from="1535551651318" duration="625000" />
       <workItem from="1535599606617" duration="10861000" />
       <workItem from="1535639319647" duration="7000" />
-      <workItem from="1535682769505" duration="4597000" />
+      <workItem from="1535682769505" duration="6063000" />
     </task>
     <servers />
   </component>
@@ -518,13 +559,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94751000" />
+    <option name="totallyTimeSpent" value="96217000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988662" visible="true" weight="0.25268096" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4988662" weight="0.2707775" />
       <window_info id="Designer" order="1" />
       <window_info id="Image Layers" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -537,10 +578,10 @@
       <window_info anchor="bottom" id="Debug" order="2" weight="0.0" />
       <window_info anchor="bottom" id="Cvs" order="3" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="4" weight="0.4" />
-      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.49946353" visible="true" weight="0.0" />
+      <window_info active="true" anchor="bottom" id="Run" order="5" sideWeight="0.49946353" visible="true" weight="0.20650637" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" weight="0.0" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.43422914" />
       <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5005365" side_tool="true" weight="0.49773243" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3592645" />
       <window_info anchor="bottom" id="Java Enterprise" order="11" weight="0.3281471" />
@@ -866,6 +907,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2475">
+          <caret line="119" column="16" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao/src/test/java/ThreadTest/AtomicIntegerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="24" column="24" lean-forward="true" selection-start-line="24" selection-start-column="24" selection-end-line="24" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/toutiao/src/test/java/ThreadTest/BlockingQueueTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="429">
@@ -881,19 +939,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/concurrent/atomic/AtomicInteger.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/concurrent/ScheduledThreadPoolExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2475">
-          <caret line="119" column="16" selection-start-line="119" selection-start-column="16" selection-end-line="119" selection-end-column="16" />
+        <state relative-caret-position="210">
+          <caret line="429" column="52" selection-start-line="429" selection-start-column="52" selection-end-line="429" selection-end-column="52" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/toutiao/src/test/java/ThreadTest/AtomicIntegerTest.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/concurrent/Executors.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1254">
-          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+        <state relative-caret-position="226">
+          <caret line="251" column="31" selection-start-line="251" selection-start-column="31" selection-end-line="251" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/util/concurrent/ExecutorService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="235">
+          <caret line="136" column="26" selection-start-line="136" selection-start-column="26" selection-end-line="136" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/toutiao/src/test/java/ThreadTest/ExecutorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="18" column="9" lean-forward="true" selection-start-line="18" selection-start-column="9" selection-end-line="18" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#235#236#0" expanded="true" />
+            <element signature="e#265#266#0" expanded="true" />
           </folding>
         </state>
       </provider>
