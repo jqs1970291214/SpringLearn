@@ -8,6 +8,7 @@ import org.apache.commons.lang.builder.ToStringBuilder;
 import org.springframework.boot.json.JsonParser;
 import org.springframework.boot.json.JsonParserFactory;
 
+import java.io.ByteArrayInputStream;
 import java.io.IOException;
 import java.util.*;
 import java.util.function.IntPredicate;
@@ -48,6 +49,12 @@ public class JsonTest {
                 System.out.println(name + " " + i);
             }
         };
+        Properties properties = new Properties();
+        ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(" key=tvalue".getBytes());
+        properties.load(byteArrayInputStream);
+        System.out.println(properties.getProperty("key"));
+        properties.setProperty("ke y", "hh");
+        System.out.println(properties.getProperty("ke y"));
 
 //        Thread thread = new Thread(runnable);
 //        Thread thread1 = new Thread(runnable);
