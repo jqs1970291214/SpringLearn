@@ -1,8 +1,4 @@
-package Test;
-
-import jdk.nashorn.internal.ir.Block;
-import org.omg.CORBA.PERSIST_STORE;
-import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
+package ThreadTest;
 
 import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.BlockingQueue;
@@ -14,7 +10,7 @@ import java.util.concurrent.BlockingQueue;
  * @author Junqson
  * @date 2018/8/31 13:41
  */
-public class MultiThread {
+public class BlockingQueueTest {
 
     public static void main(String[] args) throws InterruptedException {
         BlockingQueue<String> blockingQueue = new ArrayBlockingQueue<String>(1000);

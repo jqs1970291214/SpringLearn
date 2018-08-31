@@ -33,7 +33,7 @@
 //     * 1.javaBean转化成json---两种方法writeObject/writeValue均可
 //     * jsonGenerator依赖于ObjectMapper创建
 //     */
-//    @Test
+//    @ThreadTest
 //    public void javaBeanToJson() {
 //
 //        try {
@@ -54,7 +54,7 @@
 //    /**
 //     * List转化成JSON，三种方式
 //     */
-//    @Test
+//    @ThreadTest
 //    public void listToJson() {
 //        try {
 //            List<Book> list = new ArrayList<Book>();
@@ -88,7 +88,7 @@
 //    /**
 //     * map转化成JSON,两种方式
 //     */
-//    @Test
+//    @ThreadTest
 //    public void mapToJSON() {
 //        try {
 //            Map<String, Object> map = new HashMap<String, Object>();
@@ -116,7 +116,7 @@
 //    /**
 //     * json'对象'数据转化成javaBean
 //     */
-//    @Test
+//    @ThreadTest
 //    public void jsonToJavaBean() {
 //        String json = "{\"bookId\":\"11111\",\"author\":\"鲁迅\",\"name\":\"朝花夕拾\",\"price\":\"45\"}";
 //        try {
@@ -134,7 +134,7 @@
 //    /**
 //     * json'数组'数据转化为ArrayList
 //     */
-//    @Test
+//    @ThreadTest
 //    public void jsonToArrayList() {
 //        String json = "[{\"bookId\":\"11111\",\"author\":\"鲁迅\",\"name\":\"朝花夕拾\",\"price\":\"45\"},"
 //                + "{\"bookId\":\"11111\",\"author\":\"鲁迅\",\"name\":\"朝花夕拾\",\"price\":\"45\"}]";
@@ -159,7 +159,7 @@
 //    /**
 //     * json转换成map
 //     */
-//    @Test
+//    @ThreadTest
 //    public void JsonToMap() {
 //        String json = "{\"name\":\"book\",\"number\":\"12138\",\"book1\":{\"bookId\":\"11111\",\"author\":\"鲁迅\",\"name\":\"朝花夕拾\",\"price\":\"45\"},"
 //                + "\"book2\":{\"bookId\":\"22222\",\"author\":\"易中天\",\"name\":\"祖先\",\"price\":\"25\"}}";

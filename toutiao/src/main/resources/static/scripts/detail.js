@@ -3779,7 +3779,7 @@ function internalData( elem, name, data, pvt /* Internal Use Only */ ) {
 		// First Try to find as-is property data
 		ret = thisCache[ name ];
 
-		// Test for null|undefined property data
+		// ThreadTest for null|undefined property data
 		if ( ret == null ) {
 
 			// Try to find the camelCased property
@@ -6099,7 +6099,7 @@ function defaultDisplay( nodeName ) {
 
 		body = document.getElementsByTagName( "body" )[ 0 ];
 		if ( !body || !body.style ) {
-			// Test fired too early or in an unsupported environment, exit.
+			// ThreadTest fired too early or in an unsupported environment, exit.
 			return;
 		}
 
@@ -6350,7 +6350,7 @@ function addGetHookIf( conditionFn, hookFn ) {
 
 		body = document.getElementsByTagName( "body" )[ 0 ];
 		if ( !body || !body.style ) {
-			// Test fired too early or in an unsupported environment, exit.
+			// ThreadTest fired too early or in an unsupported environment, exit.
 			return;
 		}
 
@@ -7181,7 +7181,7 @@ function defaultPrefilter( elem, props, opts ) {
 		// animations on inline elements that are having width/height animated
 		display = jQuery.css( elem, "display" );
 
-		// Test default display if display is currently "none"
+		// ThreadTest default display if display is currently "none"
 		checkDisplay = display === "none" ?
 			jQuery._data( elem, "olddisplay" ) || defaultDisplay( elem.nodeName ) : display;
 
@@ -7705,7 +7705,7 @@ jQuery.fn.delay = function( time, type ) {
 
 	a.style.cssText = "top:1px";
 
-	// Test setAttribute on camelCase class. If it works, we need attrFixes when doing get/setAttribute (ie6/7)
+	// ThreadTest setAttribute on camelCase class. If it works, we need attrFixes when doing get/setAttribute (ie6/7)
 	support.getSetAttribute = div.className !== "t";
 
 	// Get the style information from getAttribute
